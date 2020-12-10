@@ -47,8 +47,8 @@
         "desc_en": "swap %s ETH for %s %s to %s",
         "translators": [
             "ETHAMT IMMED-18 FMTAMT",
-            "ARG-amountOut ARG-path LST--1 DECIMAL FMTAMT",
-            "ARG-path LST--1 SYMBOL",
+            "ARG-amountOut ARG-path IMMED--1 LSTITEM DECIMAL FMTAMT",
+            "ARG-path IMMED--1 LSTITEM SYMBOL",
             "ARG-to FMTADDR"
         ]
     },
@@ -57,8 +57,8 @@
         "desc_en": "swap %s ETH for %s %s to %s",
         "translators": [
             "ETHAMT IMMED-18 FMTAMT",
-            "ARG-amountOutMin ARG-path LST--1 DECIMAL FMTAMT",
-            "ARG-path LST--1 SYMBOL",
+            "ARG-amountOutMin ARG-path IMMED--1 LSTITEM DECIMAL FMTAMT",
+            "ARG-path IMMED--1 LSTITEM SYMBOL",
             "ARG-to FMTADDR"
         ]
     },
@@ -66,8 +66,8 @@
         "id": "UNISWAP_swapExactTokensForETH",
         "desc_en": "swap %s %s for %s ETH to %s",
         "translators": [
-            "ARG-amountIn ARG-path LST-0 DECIMAL FMTAMT",
-            "ARG-path LST-0 SYMBOL",
+            "ARG-amountIn ARG-path IMMED-0 LSTITEM DECIMAL FMTAMT",
+            "ARG-path IMMED-0 LSTITEM SYMBOL",
             "ARG-amountOutMin IMMED-18 FMTAMT",
             "ARG-to FMTADDR"
         ]
@@ -76,8 +76,8 @@
         "id": "UNISWAP_swapTokensForExactETH",
         "desc_en": "swap %s %s for %s ETH to %s",
         "translators": [
-            "ARG-amountInMax ARG-path LST-0 DECIMAL FMTAMT",
-            "ARG-path LST-0 SYMBOL",
+            "ARG-amountInMax ARG-path IMMED-0 LSTITEM DECIMAL FMTAMT",
+            "ARG-path IMMED-0 LSTITEM SYMBOL",
             "ARG-amountOut IMMED-18 FMTAMT",
             "ARG-to FMTADDR"
         ]
@@ -86,10 +86,10 @@
         "id": "UNISWAP_swapExactTokensForTokens",
         "desc_en": "swap %s %s for %s %s to %s",
         "translators": [
-            "ARG-amountIn ARG-path LST-0 DECIMAL FMTAMT",
-            "ARG-path LST-0 SYMBOL",
-            "ARG-amountOutMin ARG-path LST--1 DECIMAL FMTAMT",
-            "ARG-path LST--1 SYMBOL",
+            "ARG-amountIn ARG-path IMMED-0 LSTITEM DECIMAL FMTAMT",
+            "ARG-path IMMED-0 LSTITEM SYMBOL",
+            "ARG-amountOutMin ARG-path IMMED--1 LSTITEM DECIMAL FMTAMT",
+            "ARG-path IMMED--1 LSTITEM SYMBOL",
             "ARG-to FMTADDR"
         ]
     },
@@ -97,10 +97,10 @@
         "id": "UNISWAP_swapTokensForExactTokens",
         "desc_en": "swap %s %s for %s %s to %s",
         "translators": [
-            "ARG-amountInMax ARG-path LST-0 DECIMAL FMTAMT",
-            "ARG-path LST-0 SYMBOL",
-            "ARG-amountOut ARG-path LST--1 DECIMAL FMTAMT",
-            "ARG-path LST--1 SYMBOL",
+            "ARG-amountInMax ARG-path IMMED-0 LSTITEM DECIMAL FMTAMT",
+            "ARG-path IMMED-0 LSTITEM SYMBOL",
+            "ARG-amountOut ARG-path IMMED--1 LSTITEM DECIMAL FMTAMT",
+            "ARG-path IMMED--1 LSTITEM SYMBOL",
             "ARG-to FMTADDR"
         ]
     },
@@ -108,10 +108,10 @@
         "id": "UNISWAP_swapExactTokensForTokensSupportingFeeOnTransferTokens",
         "desc_en": "swap %s %s for %s %s to %s",
         "translators": [
-            "ARG-amountIn ARG-path LST-0 DECIMAL FMTAMT",
-            "ARG-path LST-0 SYMBOL",
-            "ARG-amountOutMin ARG-path LST--1 DECIMAL FMTAMT",
-            "ARG-path LST--1 SYMBOL",
+            "ARG-amountIn ARG-path IMMED-0 LSTITEM DECIMAL FMTAMT",
+            "ARG-path IMMED-0 LSTITEM SYMBOL",
+            "ARG-amountOutMin ARG-path IMMED--1 LSTITEM DECIMAL FMTAMT",
+            "ARG-path IMMED--1 LSTITEM SYMBOL",
             "ARG-to FMTADDR"
         ]
     },
@@ -119,8 +119,8 @@
         "id": "UNISWAP_swapExactTokensForETHSupportingFeeOnTransferTokens",
         "desc_en": "swap %s %s for %s ETH to %s",
         "translators": [
-            "ARG-amountIn ARG-path LST-0 DECIMAL FMTAMT",
-            "ARG-path LST-0 SYMBOL",
+            "ARG-amountIn ARG-path IMMED-0 LSTITEM DECIMAL FMTAMT",
+            "ARG-path IMMED-0 LSTITEM SYMBOL",
             "ARG-amountOutMin IMMED-18 FMTAMT",
             "ARG-to FMTADDR"
         ]
@@ -214,10 +214,116 @@
         "id": "CURVEFIYSWAP_add_liquidity",
         "desc_en": "add %s DAI, %s USDC, %s USDT, %s TUSD to y Swap",
         "translators": [
-            "ARG-amounts LST-0 18 FMTAMT",
-            "ARG-amounts LST-1 6 FMTAMT",
-            "ARG-amounts LST-2 6 FMTAMT",
-            "ARG-amounts LST-3 18 FMTAMT"
+            "ARG-amounts IMMED-0 LSTITEM IMMED-18 FMTAMT",
+            "ARG-amounts IMMED-1 LSTITEM IMMED-6 FMTAMT",
+            "ARG-amounts IMMED-2 LSTITEM IMMED-6 FMTAMT",
+            "ARG-amounts IMMED-3 LSTITEM IMMED-18 FMTAMT"
+        ]
+    },
+    {
+        "id": "CURVEFIDAIPOOL_exchange",
+        "desc_en": "sell %s %s for %s %s",
+        "translators": [
+            "ARG-dx IMMED- ARG-i IMMED-arg0 IMMED-1 IMMED-coins TO CALL DECIMAL FMTAMT",
+            "IMMED- ARG-i IMMED-arg0 IMMED-1 IMMED-coins TO CALL SYMBOL",
+            "ARG-min_dy IMMED- ARG-j IMMED-arg0 IMMED-1 IMMED-coins TO CALL DECIMAL FMTAMT",
+            "IMMED- ARG-j IMMED-arg0 IMMED-1 IMMED-coins TO CALL SYMBOL"
+        ]
+    },
+    {
+        "id": "CURVEFIDAIPOOL_add_liquidity",
+        "desc_en": "add %s DAI, %s USDC, %s USDT to DAI/USDC/USDT pool",
+        "translators": [
+            "ARG-amounts IMMED-0 LSTITEM IMMED-18 FMTAMT",
+            "ARG-amounts IMMED-1 LSTITEM IMMED-6 FMTAMT",
+            "ARG-amounts IMMED-2 LSTITEM IMMED-6 FMTAMT"
+        ]
+    },
+    {
+        "id": "CURVEFIDAIPOOL_remove_liquidity_one_coin",
+        "desc_en": "remove %s %s from DAI/USDC/USDT pool",
+        "translators": [
+            "ARG-min_amount IMMED- ARG-i IMMED-arg0 IMMED-1 IMMED-coins TO CALL DECIMAL FMTAMT",
+            "IMMED- ARG-i IMMED-arg0 IMMED-1 IMMED-coins TO CALL SYMBOL"
+        ]
+    },
+    {
+        "id": "CURVEFIDAIGAUGE_withdraw",
+        "desc_en": "withdraw %s 3Crv from DAI/USDC/USDT Gauge",
+        "translators": [
+            "ARG-_value IMMED-18 FMTAMT"
+        ]
+    },
+    {
+        "id": "CURVEFIDAIGAUGE_deposit",
+        "desc_en": "deposit %s 3Crv to DAI/USDC/USDT Gauge",
+        "translators": [
+            "ARG-_value IMMED-18 FMTAMT"
+        ]
+    },
+    {
+        "id": "CURVEFIUSDNPOOL_add_liquidity",
+        "desc_en": "add %s USDN, %s 3Crv to USDN pool",
+        "translators": [
+            "ARG-amounts IMMED-0 LSTITEM IMMED-18 FMTAMT",
+            "ARG-amounts IMMED-1 LSTITEM IMMED-18 FMTAMT"
+        ]
+    },
+    {
+        "id": "CURVEFIUSDNPOOL_exchange_underlying",
+        "desc_en": "sell %s %s for %s %s",
+        "translators": [
+            "ARG-dx IMMED-6 IMMED-6 IMMED-18 IMMED-18 IMMED-4 LIST ARG-i LSTITEM FMTAMT",
+            "IMMED-USDT IMMED-USDC IMMED-DAI IMMED-USDN IMMED-4 LIST ARG-i LSTITEM",
+            "ARG-min_dy IMMED-6 IMMED-6 IMMED-18 IMMED-18 IMMED-4 LIST ARG-j LSTITEM FMTAMT",
+            "IMMED-USDT IMMED-USDC IMMED-DAI IMMED-USDN IMMED-4 LIST ARG-j LSTITEM"
+        ]
+    },
+    {
+        "id": "CURVEFIUSDNPOOL_remove_liquidity_imbalance",
+        "desc_en": "remove %s USDN/3Crv for %s USDN, %s 3Crv",
+        "translators": [
+            "ARG-max_burn_amount IMMED-18 FMTAMT",
+            "ARG-amounts IMMED-0 LSTITEM IMMED-18 FMTAMT",
+            "ARG-amounts IMMED-1 LSTITEM IMMED-18 FMTAMT"
+        ]
+    },
+    {
+        "id": "CURVEFIUSDNPOOL_remove_liquidity_one_coin",
+        "desc_en": "withdraw %s %s from USDN pool",
+        "translators": [
+            "ARG-_min_amount IMMED- ARG-i IMMED-arg0 IMMED-1 IMMED-coins TO CALL DECIMAL FMTAMT",
+            "IMMED- ARG-i IMMED-arg0 IMMED-1 IMMED-coins TO CALL SYMBOL"
+        ]
+    },
+    {
+        "id": "CURVEFIUSDNDEPOSIT_add_liquidity",
+        "desc_en": "add %s USDN, %s DAI, %s USDC, %s USDT to USDN deposit pool for %s USDN/3Crv",
+        "translators": [
+            "ARG-amounts IMMED-0 LSTITEM IMMED-18 FMTAMT",
+            "ARG-amounts IMMED-1 LSTITEM IMMED-18 FMTAMT",
+            "ARG-amounts IMMED-2 LSTITEM IMMED-6 FMTAMT",
+            "ARG-amounts IMMED-3 LSTITEM IMMED-6 FMTAMT",
+            "ARG-min_mint_amount IMMED-18 FMTAMT"
+        ]
+    },
+    {
+        "id": "CURVEFIUSDNDEPOSIT_remove_liquidity_one_coin",
+        "desc_en": "withdraw %s %s from USDN deposit pool",
+        "translators": [
+            "ARG-_min_amount IMMED- ARG-i IMMED-arg0 IMMED-1 IMMED-coins TO CALL DECIMAL FMTAMT",
+            "IMMED- ARG-i IMMED-arg0 IMMED-1 IMMED-coins TO CALL SYMBOL"
+        ]
+    },
+    {
+        "id": "CURVEFIUSDNDEPOSIT_remove_liquidity",
+        "desc_en": "pay %s USDN/3Crv to remove at least %s USDN, %s DAI, %s USDC, %s USDT from USDN deposit pool",
+        "translators": [
+            "ARG-_amount IMMED-18 FMTAMT",
+            "ARG-min_amounts IMMED-0 LSTITEM IMMED-18 FMTAMT",
+            "ARG-min_amounts IMMED-1 LSTITEM IMMED-18 FMTAMT",
+            "ARG-min_amounts IMMED-2 LSTITEM IMMED-6 FMTAMT",
+            "ARG-min_amounts IMMED-3 LSTITEM IMMED-6 FMTAMT"
         ]
     }
 ]
