@@ -369,5 +369,15 @@
             "ARG-minTotalAmountOut IMMED-18 ARG-tokenOut DECIMAL_EXCEPT ARG-tokenOut IMMED-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee CMP TST FMTAMT",
             "IMMED-ETH ARG-tokenOut SYMBOL_EXCEPT ARG-tokenOut IMMED-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee CMP TST"
         ]
+    },
+    {
+        "id": "BALANCERV2_multihopBatchSwapExactOut",
+        "desc_en": "pay at most %s %s for %s %s",
+        "translators": [
+            "ARG-maxTotalAmountIn IMMED-18 ARG-tokenIn DECIMAL_EXCEPT ARG-tokenIn IMMED-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee CMP TST FMTAMT",
+            "IMMED-ETH ARG-tokenIn SYMBOL_EXCEPT ARG-tokenIn IMMED-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee CMP TST",
+            "ARG-swapSequences IMMED--1 LSTITEM IMMED--1 LSTITEM IMMED-3 LSTITEM IMMED-18 ARG-tokenOut DECIMAL_EXCEPT ARG-tokenOut IMMED-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee CMP TST FMTAMT",
+            "IMMED-ETH ARG-tokenOut SYMBOL_EXCEPT ARG-tokenOut IMMED-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee CMP TST"
+        ]
     }
 ]
