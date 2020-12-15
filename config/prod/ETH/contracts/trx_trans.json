@@ -149,11 +149,23 @@
     },
     {
         "id": "UNISWAP_removeLiquidityETH",
-        "desc_en": "remove %s ETH and %s %s",
+        "desc_en": "remove %s ETH and %s %s from pool to %s",
         "translators": [
             "ARG-amountETHMin IMMED-18 FMTAMT",
             "ARG-amountTokenMin ARG-token DECIMAL FMTAMT",
-            "ARG-token SYMBOL"
+            "ARG-token SYMBOL",
+            "ARG-to FMTADDR"
+        ]
+    },
+    {
+        "id": "UNISWAP_removeLiquidity",
+        "desc_en": "remove %s %s, %s %s from pool to %s",
+        "translators": [
+            "ARG-amountAMin ARG-tokenA DECIMAL FMTAMT",
+            "ARG-tokenA SYMBOL",
+            "ARG-amountBMin ARG-tokenB DECIMAL FMTAMT",
+            "ARG-tokenB SYMBOL",
+            "ARG-to FMTADDR"
         ]
     },
     {
@@ -324,6 +336,38 @@
             "ARG-min_amounts IMMED-1 LSTITEM IMMED-18 FMTAMT",
             "ARG-min_amounts IMMED-2 LSTITEM IMMED-6 FMTAMT",
             "ARG-min_amounts IMMED-3 LSTITEM IMMED-6 FMTAMT"
+        ]
+    },
+    {
+        "id": "1INCHV2_swap",
+        "desc_en": "pay %s %s for at least %s %s to %s",
+        "translators": [
+            "ARG-desc IMMED-4 LSTITEM IMMED-18 ARG-desc IMMED-0 LSTITEM DECIMAL_EXCEPT ARG-desc IMMED-0 LSTITEM IMMED-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee CMP ARG-desc IMMED-0 LSTITEM IMMED-0000000000000000000000000000000000000000 CMP OR TST FMTAMT",
+            "IMMED-ETH ARG-desc IMMED-0 LSTITEM SYMBOL_EXCEPT ARG-desc IMMED-0 LSTITEM IMMED-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee CMP ARG-desc IMMED-0 LSTITEM IMMED-0000000000000000000000000000000000000000 CMP OR TST",
+            "ARG-desc IMMED-5 LSTITEM IMMED-18 ARG-desc IMMED-1 LSTITEM DECIMAL_EXCEPT ARG-desc IMMED-1 LSTITEM IMMED-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee CMP ARG-desc IMMED-1 LSTITEM IMMED-0000000000000000000000000000000000000000 CMP OR TST FMTAMT",
+            "IMMED-ETH ARG-desc IMMED-1 LSTITEM SYMBOL_EXCEPT ARG-desc IMMED-1 LSTITEM IMMED-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee CMP ARG-desc IMMED-1 LSTITEM IMMED-0000000000000000000000000000000000000000 CMP OR TST",
+            "ARG-desc IMMED-3 LSTITEM FMTADDR"
+        ]
+    },
+    {
+        "id": "1INCHV2_discountedSwap",
+        "desc_en": "pay %s %s for at least %s %s to %s",
+        "translators": [
+            "ARG-desc IMMED-4 LSTITEM IMMED-18 ARG-desc IMMED-0 LSTITEM DECIMAL_EXCEPT ARG-desc IMMED-0 LSTITEM IMMED-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee CMP ARG-desc IMMED-0 LSTITEM IMMED-0000000000000000000000000000000000000000 CMP OR TST FMTAMT",
+            "IMMED-ETH ARG-desc IMMED-0 LSTITEM SYMBOL_EXCEPT ARG-desc IMMED-0 LSTITEM IMMED-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee CMP ARG-desc IMMED-0 LSTITEM IMMED-0000000000000000000000000000000000000000 CMP OR TST",
+            "ARG-desc IMMED-5 LSTITEM IMMED-18 ARG-desc IMMED-1 LSTITEM DECIMAL_EXCEPT ARG-desc IMMED-1 LSTITEM IMMED-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee CMP ARG-desc IMMED-1 LSTITEM IMMED-0000000000000000000000000000000000000000 CMP OR TST FMTAMT",
+            "IMMED-ETH ARG-desc IMMED-1 LSTITEM SYMBOL_EXCEPT ARG-desc IMMED-1 LSTITEM IMMED-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee CMP ARG-desc IMMED-1 LSTITEM IMMED-0000000000000000000000000000000000000000 CMP OR TST",
+            "ARG-desc IMMED-3 LSTITEM FMTADDR"
+        ]
+    },
+    {
+        "id": "BALANCERV2_multihopBatchSwapExactIn",
+        "desc_en": "pay %s %s for at least %s %s",
+        "translators": [
+            "ARG-totalAmountIn IMMED-18 ARG-tokenIn DECIMAL_EXCEPT ARG-tokenIn IMMED-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee CMP TST FMTAMT",
+            "IMMED-ETH ARG-tokenIn SYMBOL_EXCEPT ARG-tokenIn IMMED-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee CMP TST",
+            "ARG-minTotalAmountOut IMMED-18 ARG-tokenOut DECIMAL_EXCEPT ARG-tokenOut IMMED-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee CMP TST FMTAMT",
+            "IMMED-ETH ARG-tokenOut SYMBOL_EXCEPT ARG-tokenOut IMMED-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee CMP TST"
         ]
     }
 ]

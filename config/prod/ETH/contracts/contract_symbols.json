@@ -5,6 +5,11 @@
         "type": "UNISWAP"
     },
     {
+        "address": "0xd9e1ce17f2641f24ae83637ab66a2cca9c378b9f",
+        "symbol": "SUSHISWAP",
+        "type": "UNISWAP"
+    },
+    {
         "address": "0x7d2768de32b0b80b7a3454c06bdac94a69ddc7a9",
         "symbol": "AAVE",
         "type": "AAVE"
@@ -38,6 +43,16 @@
         "address": "0x35796dac54f144dfbad1441ec7c32313a7c29f39",
         "symbol": "Curve.fi: USDN Deposit",
         "type": "CURVEFIUSDNDEPOSIT"
+    },
+    {
+        "address": "0x111111125434b319222cdbf8c261674adb56f3ae",
+        "symbol": "1inch v2",
+        "type": "1INCHV2"
+    },
+    {
+        "address": "0x3e66b66fd1d0b02fda6c811da9e0547970db2f21",
+        "symbol": "balancer v2",
+        "type": "BALANCERV2"
     },
     {
         "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
